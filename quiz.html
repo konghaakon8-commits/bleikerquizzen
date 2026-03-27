@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+  <meta charset="UTF-8">
+  <title>BleikerQuizzen – Quiz</title>
+  <link rel="stylesheet" href="css/main.css">
+  <script src="js/script.js" defer></script>
+</head>
+<body>
+
+  <header>
+  <nav class="navbar">
+    <a href="index.html" class="logo">
+      <img src="../img/Logo Bleiker Quizzen uten hvit bakgrunn.png" alt="BleikerQuizzen logo">
+    </a>
+    <ul>
+      <li><a href="grafisk.html">Grafisk</a></li>
+      <li><a href="quiz.html">Quiz</a></li>
+      <li><a href="video.html">Video</a></li>
+      <li><a href="some.html">SoMe</a></li>
+    </ul>
+  </nav>
+</header>
+
+  <main class="center">
+    <section id="nameSection">
+      <h1>BleikerQuizzen</h1>
+      <h2>Skriv inn navnet ditt</h2>
+      <input type="text" id="playerName" placeholder="Navn">
+      <button id="startQuizBtn">Start quiz</button>
+    </section>
+
+    <section id="quizSection" class="hidden">
+      <div id="quizContainer">
+        <h2 id="question"></h2>
+        <div id="videoContainer"></div>
+        <div id="buttons"></div>
+        <p id="feedback"></p>
+        <div id="next"></div>
+      </div>
+    </section>
+
+    <section id="summarySection" class="hidden">
+      <h2>Ditt sammendrag</h2>
+      <p id="totalScore"></p>
+      <h3>Highscore (topp 5)</h3>
+      <ol id="highscoreList"></ol>
+      <button onclick="restartQuiz()">Spill igjen</button>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-content">
+      <div>Logo</div>
+      <div>Laget av: Haakon</div>
+      <div>Kontakt: din@mail.no</div>
+    </div>
+  </footer>
+
+</body>
+</html>
